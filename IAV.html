@@ -1,0 +1,443 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0036)file:///C:/Users/pc/Desktop/IAV.html -->
+<html dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    
+    <title>IAV</title>
+    <link rel="icon" href="https://lgi.iav.ac.ma/favicon.ico" type="image/ico">
+    <link rel="shortcut icon" href="https://lgi.iav.ac.ma/favicon.ico" type="image/ico">
+
+    <link href="./IAV_files/application.css" media="screen" rel="stylesheet" type="text/css">
+<link href="./IAV_files/ui.all.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="./IAV_files/profile.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="./IAV_files/modalbox.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="./IAV_files/popup.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="./IAV_files/autosuggest-menu.css" media="screen" rel="stylesheet" type="text/css">
+
+    <script src="./IAV_files/all.js.téléchargement" type="text/javascript"></script>
+
+    <script src="./IAV_files/nicetitle.js.téléchargement" type="text/javascript"></script>
+<script src="./IAV_files/droplicious.js.téléchargement" type="text/javascript"></script>
+
+    <script src="./IAV_files/fckeditor.js.téléchargement" type="text/javascript"></script>
+
+    <script src="./IAV_files/builder.js.téléchargement" type="text/javascript"></script>
+
+    <script src="./IAV_files/modalbox.js.téléchargement" type="text/javascript"></script>
+
+
+
+    
+
+    <script src="./IAV_files/calendar_date_select.js.téléchargement" type="text/javascript"></script>
+<script src="./IAV_files/format_iso_date.js.téléchargement" type="text/javascript"></script>
+
+<link href="./IAV_files/red.css" media="screen" rel="stylesheet" type="text/css">
+
+    
+
+    <script src="./IAV_files/fr.js.téléchargement" type="text/javascript"></script>
+
+    
+    <script src="./IAV_files/jquery.min.js.téléchargement" type="text/javascript"></script>
+
+    <script src="./IAV_files/jquery-ui.min.js.téléchargement" type="text/javascript"></script>
+
+    <script src="./IAV_files/jquery.hotkeys.js.téléchargement" type="text/javascript"></script>
+
+  </head>
+
+  <body>
+    <div id="header_bg">
+      <div id="header">
+        <div id="outer-header-link">
+          <div id="institution-name">
+          </div>
+          <div id="header_link">
+            <div id="messages-link">
+              <a href="https://lgi.iav.ac.ma/reminder">Messages</a>
+<span>(29)</span>
+            </div>
+            <div id="profile-link">
+              <a href="./IAV_files/bader2.jpg" class="profile-link">BADER</a>
+            </div>
+            <div id="logout-link">
+              <a href="https://lgi.iav.ac.ma/user/logout">Se déconnecter</a>
+            </div>
+          </div>
+        </div>
+        <div id="outer-main-menu">
+          
+
+<ul id="main-menu">
+  <li class="a"><a href="https://lgi.iav.ac.ma/user/dashboard">Tableau de bord</a></li>
+  
+  
+  
+<!--    -->
+
+  <!--
+  <li></li> -->
+  
+  
+  <li class="a"><a href="https://lgi.iav.ac.ma/student/profile/14168#">Plus ▼</a>
+    <ul class="level-1" id="more-parent">
+      <!-- <li><a href="/calendar">Calendrier</a></li> -->
+      
+      <li><a href="https://lgi.iav.ac.ma/news">Nouvelles</a></li>
+      
+      
+      
+      
+      
+    <li><a href="https://lgi.iav.ac.ma/online_meeting_rooms">Collaborer</a></li><li><a href="file:///C:/online_meeting_rooms">Collaborer</a></li></ul>
+  </li>
+</ul>
+
+<script type="text/javascript">
+  function load_menu_from_plugins(){
+
+  
+    
+    
+    
+    
+      
+        
+              $('more-parent').insert({bottom: '<li><a href="/online_meeting_rooms">Collaborer</a></li>'})
+        
+      
+      
+    
+  
+
+  }
+</script>
+
+        </div>
+        <div id="outer-autosuggest-menu">
+          
+<script type="text/javascript">
+  jQuery.noConflict();
+  function __highlight(s, t) {
+    var matcher = new RegExp("("+jQuery.ui.autocomplete.escapeRegex(t)+")", "ig" );
+    return s.replace(matcher, "<strong>$1</strong>");
+  }
+
+  jQuery.ui.autocomplete.prototype._renderItem = function (ul, item) {
+    //  item.label = item.label.replace(new RegExp("(?![^&;]+;)(?!<[^<>]*)(" + jQuery.ui.autocomplete.escapeRegex(this.term) + ")(?![^<>]*>)(?![^&;]+;)", "gi"), "<strong>$1</strong>");
+    if (item.menutype == 'action')    {
+      return jQuery("<li></li>")
+      .data("item.autocomplete",item)
+      .append("<a class='action'>"+ item.label +"</a>")
+      .appendTo(ul);
+    }
+    item.label = __highlight(item.label, this.term)
+    return jQuery("<li></li>")
+    .data("item.autocomplete", item)
+    .append("<a>" + item.label + "</a>")
+    .appendTo(ul);
+  };
+
+  jQuery(document).bind('keypress', 'q', function(){jQuery("input#autosuggest_menu_input").focus();return false;});
+  gotoLink = function(event,ui){
+    window.location.href = ui.item.value;
+    return false;
+  };
+  searchoptions = function (request,response){
+    var query=request.term;
+    var available_options = [{"value":"/news","menu_type":"link","label":"Nouvelles"},{"value":"/news/all","menu_type":"link","label":"Voir les nouvelles"},{"value":"/student_attendance","menu_type":"link","label":"Pr\u00e9sence de l'\u00e9tudiant"}];
+    var options = jQuery.ui.autocomplete.filter(available_options,query).slice(0,11);
+    options.push({'menutype': 'action',
+      'label' : 'Recherche sur les étudiants : <strong>'+query+'</strong>',
+      'value' : "/student/advanced_search?search%5Border%5D=&search%5Bfirst_name_or_middle_name_or_last_name_like%5D="+query+"&search%5Badmission_no_equals%5D=&advv_search%5Bcourse_id%5D=&search%5Bbatch_id_equals%5D=&search%5Bstudent_category_id_equals%5D=&search%5Bgender_equals%5D=&search%5Bblood_group_like%5D=&search%5Bnationality_id_equals%5D=&advv_search%5Bdoa_option%5D=&advv_search%5Bdoa_year%5D=&advv_search%5Bdob_option%5D=&advv_search%5Bdob_year%5D=&commit=Search"})
+
+    options.push({'menutype': 'action',
+      'label' : 'Recherche sur les enseignants: <strong>'+query+'</strong>',
+      'value' : "/employee/advanced_search?search%5Border%5D=&search%5Bfirst_name_or_middle_name_or_last_name_like%5D="+query+"&search%5Bemployee_number_equals%5D=&search%5Bgender_equals%5D=&search%5Bblood_group_like%5D=&search%5Bmarital_status_like%5D=&search%5Bnationality_id_equals%5D=&search%5Bemployee_category_id_equals%5D=&search%5Bemployee_department_id_equals%5D=&search%5Bemployee_position_id_equals%5D=&search%5Bemployee_grade_id_equals%5D=&adv_search%5Bdoj_option%5D=&adv_search%5Bdoj_year%5D=&adv_search%5Bdob_option%5D=&adv_search%5Bdob_year%5D=&search%5Bstatus_equals%5D=true&commit=Search"})
+
+    response(options)
+  }
+
+
+  jQuery(document).ready(function() {
+    jQuery("input#autosuggest_menu_input").autocomplete({
+      source: searchoptions,
+      select : gotoLink,
+      focus: function(event, ui) { return false; }
+    });
+  });
+</script>
+
+
+<input id="autosuggest_menu_input" name="autosuggest_menu" placeholder="Recherche des actions, évènements et personnes" type="text" value="">
+
+
+        </div>
+      </div>
+    </div>
+
+    <div id="content_wrapper">
+      <div id="side_bar">
+
+        <div id="sidebar_news_area">
+          
+        </div>
+      </div>
+      <div id="content"> 
+
+
+
+<div id="content-header">
+  <img src="./IAV_files/student_details_logo.jpg">
+  <h1>Info étudiant</h1>
+  <h3>Profil de l'étudiant</h3>
+  <div id="app-back-button">
+    <a href="https://lgi.iav.ac.ma/student/profile/14168#" onclick="history.back(); return false;"><img alt="Back" border="0" src="./IAV_files/back.png"></a>
+  </div>
+</div>
+
+<div id="nav">
+  <ul>
+    
+<!--       <li style="width:130px;">
+	<a href="#" onclick="new Ajax.Request('/exam/show_student_marks_history?style=width%3A120px%3B', {asynchronous:true, evalScripts:true, parameters:'school_year=2016'+'&amp;school_field_id='+146+'&amp;student_id='+14168 + '&amp;authenticity_token=' + encodeURIComponent('2677vzJMn8HTQYbAUO91ti6oCAezhk/EvrTjBEDRmCU=')}); return false;">Historique des notes</a>
+      </li> -->
+
+    
+    <li style="white-space: nowrap;width:145px; ">
+      <a href="https://lgi.iav.ac.ma/student/profile/14168#" class="drops" id="link_att">Attestations ▼</a>
+      <ul id="box_one" class="scriptaculously" style="display: none; width: 350px; overflow: visible;">
+        
+
+<li style="width:350px;"> <a href="https://lgi.iav.ac.ma/student/attestation_assurance/14168" class="user_button"> ► Demande d’attestation d'assurance</a></li>
+        
+
+
+
+
+           <li style="width:350px;"><a href="https://lgi.iav.ac.ma/student/demande_de_releves_de_notes/14168" class="user_button"> ► Demande des relevés de notes</a></li>
+       <li style="width:350px;"><a href="https://lgi.iav.ac.ma/student/demande_attestation_de_reussite/14168" class="user_button"> ► Demande d’attestation de réussite</a></li>
+        <li style="width:350px;"><a href="https://lgi.iav.ac.ma/student/demande_attestation_de_scolarite/14168" class="user_button"> ►  Demande d’attestation de Scolarité</a></li>
+
+
+</ul>
+      </li>
+    
+
+
+
+    
+    <li style="white-space: nowrap;width:145px; ">
+      <a href="https://lgi.iav.ac.ma/student/profile/14168#" class="drops" id="link_doc">Documents ▼</a>
+      <ul id="box_one" class="scriptaculously active" style="width: 350px; overflow: visible;">
+
+          
+
+
+<li style="width:350px;"> <a href="https://lgi.iav.ac.ma/student/convention_stage_maroc/14168" class="user_button"> ► Convention de stage(Maroc)</a></li>
+          
+
+
+          
+
+ <li style="width:350px;"><a href="https://lgi.iav.ac.ma/student/convention_stage_etranger/14168" class="user_button"> ► Convention de stage à l'etranger</a></li>
+
+          
+          
+
+
+
+       
+
+
+
+
+
+      </ul>
+    </li>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+      <li style="white-space: nowrap;width:130px;padding-left: 6px;">
+  <a href="https://lgi.iav.ac.ma/exam/show_student_marks_history?student_id=14168" target="_blank">Historique des notes</a>
+      </li>
+        <li style="white-space: nowrap;width:130px;padding-left: 6px;">
+  <a href="https://lgi.iav.ac.ma/exam/show_student_batches_decision?school_field_id=146&amp;school_year=2016&amp;student_id=14168" target="_blank">Decisions</a>
+
+
+    
+    
+    
+
+    
+      <!--<li><a href="/student/guardians/14168?style=width%3A140px">Tuteurs</a></li>-->
+    
+    
+    
+    </li><li>
+      <a href="https://lgi.iav.ac.ma/student/profile/14168#" class="drops" id="link_one">Plus ▼</a>
+      <ul id="box_one" class="scriptaculously active" style="overflow: visible;">
+        
+          <li><a href="https://lgi.iav.ac.ma/student/fees/14168">Charges</a></li>
+        
+        
+      </ul>
+    </li>
+
+  </ul>
+</div>
+
+<div id="page-yield">
+
+  
+
+  <div id="student_profile_heading">
+
+    <div id="profile_picture_display">
+      
+        <img alt="Bader Madich " src="./IAV_files/bader2.jpg">
+      
+    </div>
+
+    <div id="student_main_info">
+      <h3> BADER Madich  </h3>
+      <h4> Niveau: Deuxième année CI S3 </h4>
+      <h4> Classe : 2ème TOPO C.Ing/2024/2025 </h4>
+      <h4> Code étudiant : 23523
+       
+       
+     <div id="show_classement">
+
+   <a href="https://lgi.iav.ac.ma/student/profile/14168#" onclick="Element.show(&#39;loader&#39;); new Ajax.Request(&#39;/student/show_classement?student_id=14168&#39;, {asynchronous:true, evalScripts:true, onSuccess:function(request){Element.hide(&#39;loader&#39;)}, parameters:&#39;authenticity_token=&#39; + encodeURIComponent(&#39;2677vzJMn8HTQYbAUO91ti6oCAezhk/EvrTjBEDRmCU=&#39;)}); return false;">◄ Afficher Classement</a>
+
+
+<img align="absmiddle" alt="Loader" border="0" id="loader" src="./IAV_files/loader.gif" style="display: none;">
+
+    </div>
+
+    <div class="extender"> </div>
+
+  </h4></div>
+
+  <div id="new_profile_info_top">
+<!--     <div class="profile_top_banner">
+      <span class="profile"></span>
+      </div> -->
+    <table width="700">
+      <tbody><tr class="odd left"><td>Date d'admission</td><td class="right">20 Septembre 2021</td></tr>
+      <tr class="even left"><td>Date de naissance</td><td class="right">24 Mai 2003</td></tr>
+      <tr class="odd left"><td>Groupe sanguin</td><td class="right"></td></tr>
+      
+      <tr class="even left"><td>Genre</td><td class="right">M</td></tr>
+      
+
+      <tr class="odd left"><td>Nationalité</td><td class="right">Morocco</td></tr>
+      <tr class="even left"><td>Langue</td><td class="right">Arabe</td></tr>
+
+      <tr class="odd left"><td>Catégorie</td><td class="right"></td></tr>
+<!--       <tr class="even left"><td>Religion</td><td class="right"></td></tr>
+ -->      <tr class="odd left"><td>Addresse2</td><td class="right">C</td></tr>
+
+      <tr class="even left"><td>Ville</td><td class="right">Errachidia</td></tr>
+      <tr class="odd left"><td>Région</td><td class="right">Drâa-Tafilalt</td></tr>
+      <tr class="even left"><td>code postal</td><td class="right">34050</td></tr>
+      <tr class="odd left"><td>Pays</td><td class="right">Morocco</td></tr>
+      <tr class="even left"><td>Téléphone</td><td class="right">0611880097</td></tr>
+      <tr class="odd left"><td>Portable</td><td class="right"></td></tr>
+      <tr class="even left"><td>Email</td><td class="right">badermadich2001@gmail.com</td></tr>
+      
+      
+      
+        <tr class="odd left"><td>Alertes SMS</td><td class="right">Enabled</td></tr>
+      
+      <tr class="even left"><td>En cas d'urgence, contactez :</td><td class="right">
+          
+          </td></tr>
+
+<tr class="even left"><td><b>Adresse des parents pour l’année en cours</b></td>
+    <td class="right"></td></tr>
+<tr class="even left"><td><b>Profession du père</b></td>
+    <td class="right"></td></tr>
+
+<tr class="even left"><td><b>Profession de la mère</b></td>
+    <td class="right"></td></tr>
+
+
+<tr class="even left">
+      <td><b>Boursier </b> </td><td class="right">Non </td></tr>
+<tr class="even left">
+     <td><b>Origine de la bourse</b> </td><td class="right"></td></tr>
+    <tr class="even left"><td><b>RIB </b></td><td class="right"> </td></tr>
+
+
+
+<tr class="even left">
+      <td><b>Couverture médicale</b></td>
+      <td class="right"> ☐  AMO-Etudiants <br>
+       ☐ Mutuelle<br>
+       ☐ CNSS<br>
+       ☐ Assurance maladies des parents
+
+    </td>
+    </tr>
+
+
+
+
+
+
+      
+      
+        
+          <tr class="odd left"><td></td><td class="right">Pas de données antérieures</td></tr>
+        
+      
+    </tbody></table>
+
+
+    
+
+
+    
+
+  </div>
+</div>
+ 
+
+<div id="show_student_diplome"> </div>
+<div id=""> </div>
+<div id=""> </div>
+<div id="modal-box" style="display:none;"></div>
+
+ </div>
+
+      <div class="extender"></div>
+    </div>
+
+    <div id="footer">
+      <div id="footer_logo">
+        <div id="powered_by">
+          Powered by <a href="https://www.iav.ac.ma/" target="_blank">IAV</a>
+        </div>
+      </div>
+    </div>
+  
+
+</div></body></html>
